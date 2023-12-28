@@ -16,6 +16,7 @@ import ExpandableTextComponent from "./components/ExpandableComponent/Expandable
 import Form from "./components/Form/Form";
 import ControlledForm from "./components/ControlledForm/ControlledForm";
 import FormReactHookForm from "./components/FormReactHookForm/FormReactHookForm";
+import ReactFormHookZOD from "./components/ReactFormHookZOD/ReactFormHookZOD";
 
 const arrColors = [
   "primary",
@@ -47,6 +48,7 @@ function App() {
 
   return (
     <div>
+      <ReactFormHookZOD></ReactFormHookZOD>
       <FormReactHookForm></FormReactHookForm>
       <ControlledForm></ControlledForm>
       <Form></Form>
