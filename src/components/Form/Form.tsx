@@ -14,23 +14,26 @@ const Form = () => {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div className="mb-3">
-        <label htmlFor="name" className="form-label">
-          Name
-        </label>
-        <input ref={nameRef} id="name" type="text" className="form-control" />
-      </div>
-      <div className="mb-3">
-        <label htmlFor="age" className="forl-label">
-          Age
-        </label>
-        <input ref={ageRef} id="age" type="number" className="form-control" />
-      </div>
-      <button className="btn btn-primary mb-3" type="submit">
-        Submit
-      </button>
-    </form>
+    <>
+      <h2>Form</h2>
+      <form onSubmit={handleSubmit}>
+        <div className="mb-3">
+          <label htmlFor="name" className="form-label">
+            Name
+          </label>
+          <input ref={nameRef} id="name" type="text" className="form-control" />
+        </div>
+        <div className="mb-3">
+          <label htmlFor="age" className="forl-label">
+            Age
+          </label>
+          <input ref={ageRef} id="age" type="number" className="form-control" />
+        </div>
+        <button className="btn btn-primary mb-3" type="submit">
+          Submit
+        </button>
+      </form>
+    </>
   );
 };
 

@@ -14,6 +14,7 @@ import BugFixin from "./components/BugFixing/BugFixin";
 import UpdateArrayOfObjects from "./components/UpdateArrayOfObjectsImmer/UpdateArrayOfObjects";
 import ExpandableTextComponent from "./components/ExpandableComponent/ExpandableComponent";
 import Form from "./components/Form/Form";
+import ControlledForm from "./components/ControlledForm/ControlledForm";
 
 const arrColors = [
   "primary",
@@ -45,6 +46,7 @@ function App() {
 
   return (
     <div>
+      <ControlledForm></ControlledForm>
       <Form></Form>
       <ExpandableTextComponent>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
