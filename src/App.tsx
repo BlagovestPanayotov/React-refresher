@@ -9,6 +9,7 @@ import PizzaToppings from "./components/PizzaToppings/PizzaToppings";
 import ShopingCart from "./components/ShopingCard/ShopingCard";
 import Address from "./components/Address/Address";
 import Mode from "./components/Mode/Mode";
+import BugFixin from "./components/BugFixing/BugFixin";
 
 const arrColors = [
   "primary",
@@ -40,6 +41,7 @@ function App() {
 
   return (
     <div>
+      <BugFixin></BugFixin>
       {alertVisible && (
         <Alert2 onClose={() => setAlertVisibility(false)}>MyAllert</Alert2>
       )}
