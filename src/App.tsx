@@ -11,6 +11,7 @@ import Address from "./components/Address/Address";
 import Mode from "./components/Mode/Mode";
 import BugFixin from "./components/BugFixing/BugFixin";
 import UpdateArrayOfObjects from "./components/UpdateArrayOfObjectsImmer/UpdateArrayOfObjects";
+import ExpandableTextComponent from "./components/ExpandableComponent/ExpandableComponent";
 
 const arrColors = [
   "primary",
@@ -42,6 +43,12 @@ function App() {
 
   return (
     <div>
+      <ExpandableTextComponent>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+        eligendi explicabo minima dolorem officia. Non laborum, quae vel dolorem
+        nesciunt voluptas aperiam provident nulla exercitationem fuga minus
+        saepe facere. Itaque.
+      </ExpandableTextComponent>
       <BugFixin></BugFixin>
       <UpdateArrayOfObjects></UpdateArrayOfObjects>
       {alertVisible && (
