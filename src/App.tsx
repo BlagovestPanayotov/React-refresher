@@ -1,4 +1,5 @@
 import { useState } from "react";
+
 import Alert2 from "./Alert2";
 import Button from "./components/Button";
 import ListGroup from "./components/ListGroup";
@@ -12,6 +13,7 @@ import Mode from "./components/Mode/Mode";
 import BugFixin from "./components/BugFixing/BugFixin";
 import UpdateArrayOfObjects from "./components/UpdateArrayOfObjectsImmer/UpdateArrayOfObjects";
 import ExpandableTextComponent from "./components/ExpandableComponent/ExpandableComponent";
+import Form from "./components/Form/Form";
 
 const arrColors = [
   "primary",
@@ -43,6 +45,7 @@ function App() {
 
   return (
     <div>
+      <Form></Form>
       <ExpandableTextComponent>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
         eligendi explicabo minima dolorem officia. Non laborum, quae vel dolorem
