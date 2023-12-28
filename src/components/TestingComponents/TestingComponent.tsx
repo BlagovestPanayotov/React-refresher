@@ -17,7 +17,7 @@ const TestingComponent = () => {
 
   return (
     <div>
-      <p>{drink.price}</p>
+      <p>Americano price: {drink.price}</p>
       <button onClick={updateDrinckHandler}>Update</button>
     </div>
   );

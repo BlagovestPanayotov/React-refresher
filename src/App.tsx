@@ -7,6 +7,7 @@ import TestingComponent from "./components/TestingComponents/TestingComponent";
 import GamePlayerChanger from "./components/GamePlayerChanger/GamePlayerChanger";
 import PizzaToppings from "./components/PizzaToppings/PizzaToppings";
 import ShopingCart from "./components/ShopingCard/ShopingCard";
+import Address from "./components/Address/Address";
 
 const arrColors = [
   "primary",
@@ -56,6 +57,7 @@ function App() {
       <GamePlayerChanger></GamePlayerChanger>
       <PizzaToppings></PizzaToppings>
       <ShopingCart></ShopingCart>
+      <Address></Address>
     </div>
   );
 }
