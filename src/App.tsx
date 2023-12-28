@@ -10,6 +10,7 @@ import ShopingCart from "./components/ShopingCard/ShopingCard";
 import Address from "./components/Address/Address";
 import Mode from "./components/Mode/Mode";
 import BugFixin from "./components/BugFixing/BugFixin";
+import UpdateArrayOfObjects from "./components/UpdateArrayOfObjectsImmer/UpdateArrayOfObjects";
 
 const arrColors = [
   "primary",
@@ -42,6 +43,7 @@ function App() {
   return (
     <div>
       <BugFixin></BugFixin>
+      <UpdateArrayOfObjects></UpdateArrayOfObjects>
       {alertVisible && (
         <Alert2 onClose={() => setAlertVisibility(false)}>MyAllert</Alert2>
       )}
@@ -53,9 +55,7 @@ function App() {
         heading="Cities"
         onSelectItem={() => console.log("Clicked")}
       />
-
       <LikeButton></LikeButton>
-
       <TestingComponent></TestingComponent>
       <GamePlayerChanger></GamePlayerChanger>
       <PizzaToppings></PizzaToppings>
