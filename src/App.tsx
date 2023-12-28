@@ -8,6 +8,7 @@ import GamePlayerChanger from "./components/GamePlayerChanger/GamePlayerChanger"
 import PizzaToppings from "./components/PizzaToppings/PizzaToppings";
 import ShopingCart from "./components/ShopingCard/ShopingCard";
 import Address from "./components/Address/Address";
+import Mode from "./components/Mode/Mode";
 
 const arrColors = [
   "primary",
@@ -58,6 +59,7 @@ function App() {
       <PizzaToppings></PizzaToppings>
       <ShopingCart></ShopingCart>
       <Address></Address>
+      <Mode></Mode>
     </div>
   );
 }
