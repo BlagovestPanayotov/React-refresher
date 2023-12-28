@@ -15,6 +15,7 @@ import UpdateArrayOfObjects from "./components/UpdateArrayOfObjectsImmer/UpdateA
 import ExpandableTextComponent from "./components/ExpandableComponent/ExpandableComponent";
 import Form from "./components/Form/Form";
 import ControlledForm from "./components/ControlledForm/ControlledForm";
+import FormReactHookForm from "./components/FormReactHookForm/FormReactHookForm";
 
 const arrColors = [
   "primary",
@@ -46,6 +47,7 @@ function App() {
 
   return (
     <div>
+      <FormReactHookForm></FormReactHookForm>
       <ControlledForm></ControlledForm>
       <Form></Form>
       <ExpandableTextComponent>
