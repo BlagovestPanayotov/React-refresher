@@ -17,6 +17,7 @@ import Form from "./components/Form/Form";
 import ControlledForm from "./components/ControlledForm/ControlledForm";
 import FormReactHookForm from "./components/FormReactHookForm/FormReactHookForm";
 import ReactFormHookZOD from "./components/ReactFormHookZOD/ReactFormHookZOD";
+import DisabledSubmitButton from "./components/DisabledSubmitButton/DisabledSubmitButton";
 
 const arrColors = [
   "primary",
@@ -48,6 +49,7 @@ function App() {
 
   return (
     <div>
+      <DisabledSubmitButton></DisabledSubmitButton>
       <ReactFormHookZOD></ReactFormHookZOD>
       <FormReactHookForm></FormReactHookForm>
       <ControlledForm></ControlledForm>
