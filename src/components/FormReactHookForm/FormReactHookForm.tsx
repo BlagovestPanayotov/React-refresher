@@ -12,7 +12,6 @@ const FormReactHookForm = () => {
     formState: { errors },
   } = useForm<FormData>();
 
-  console.log(errors);
   function onSubmit(data: FieldValues) {}
 
   return (

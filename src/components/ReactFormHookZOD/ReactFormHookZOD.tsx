@@ -25,7 +25,6 @@ const ReactFormHookZOD = () => {
     formState: { errors },
   } = useForm<FormData>({ resolver: zodResolver(schema) });
 
-  console.log(errors);
   function onSubmit(data: FieldValues) {}
 
   return (
