@@ -18,6 +18,9 @@ import ControlledForm from "./components/ControlledForm/ControlledForm";
 import FormReactHookForm from "./components/FormReactHookForm/FormReactHookForm";
 import ReactFormHookZOD from "./components/ReactFormHookZOD/ReactFormHookZOD";
 import DisabledSubmitButton from "./components/DisabledSubmitButton/DisabledSubmitButton";
+import ProductList from "./components/ProductList/ProductList";
+import EffectCleanUp from "./components/EffectCleanUp/EffectCleanUp";
+import FetchingData from "./components/FetchingData/FetchingData";
 
 const arrColors = [
   "primary",
@@ -30,6 +33,8 @@ const arrColors = [
 ];
 
 function App() {
+  const [category, setCategory] = useState("");
+
   function HandlerButtonClick(
     currentIndex: number,
     setCurrentIndex: any,
@@ -49,6 +54,19 @@ function App() {
 
   return (
     <div>
+      <FetchingData />
+      <EffectCleanUp></EffectCleanUp>
+      <div>
+        <ProductList category={category} />
+        <select
+          className="form-select"
+          onChange={(event) => setCategory(event.target.value)}
+        >
+          <option value=""></option>
+          <option value="Cloting">Cloting</option>
+          <option value="Household">Household</option>
+        </select>
+      </div>
       <DisabledSubmitButton></DisabledSubmitButton>
       <ReactFormHookZOD></ReactFormHookZOD>
       <FormReactHookForm></FormReactHookForm>
