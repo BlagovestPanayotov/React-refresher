@@ -21,6 +21,7 @@ import DisabledSubmitButton from "./components/DisabledSubmitButton/DisabledSubm
 import ProductList from "./components/ProductList/ProductList";
 import EffectCleanUp from "./components/EffectCleanUp/EffectCleanUp";
 import FetchingData from "./components/FetchingData/FetchingData";
+import CancellingFetchRequest from "./components/CancellingFetchRequest/CancellingFetchRequest";
 
 const arrColors = [
   "primary",
@@ -54,6 +55,7 @@ function App() {
 
   return (
     <div>
+      <CancellingFetchRequest />
       <FetchingData />
       <EffectCleanUp></EffectCleanUp>
       <div>
