@@ -43,8 +43,8 @@ const FetchingData = () => {
 
   return (
     <>
-      {error && <p className="text-danger">{error}</p>}
       <h2>Fetching Data</h2>
+      {error && <p className="text-danger">{error}</p>}
       {users.map((u) => (
         <li key={u.id}>{u.name}</li>
       ))}
