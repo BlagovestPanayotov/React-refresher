@@ -22,6 +22,7 @@ import ProductList from "./components/ProductList/ProductList";
 import EffectCleanUp from "./components/EffectCleanUp/EffectCleanUp";
 import FetchingData from "./components/FetchingData/FetchingData";
 import CancellingFetchRequest from "./components/CancellingFetchRequest/CancellingFetchRequest";
+import ShowLoadingIndicator from "./components/ShowLoadingIndicator/ShowLoadingIndicator";
 
 const arrColors = [
   "primary",
@@ -55,7 +56,8 @@ function App() {
 
   return (
     <div>
-      <CancellingFetchRequest />
+      <ShowLoadingIndicator />
+      {/* <CancellingFetchRequest />
       <FetchingData />
       <EffectCleanUp></EffectCleanUp>
       <div>
@@ -99,7 +101,7 @@ function App() {
       <PizzaToppings></PizzaToppings>
       <ShopingCart></ShopingCart>
       <Address></Address>
-      <Mode></Mode>
+      <Mode></Mode> */}
     </div>
   );
 }

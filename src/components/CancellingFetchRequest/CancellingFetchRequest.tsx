@@ -12,7 +12,6 @@ const CancellingFetchRequest = () => {
 
   useEffect(() => {
     const controller = new AbortController();
-
     axios
       .get<User[]>("https://jsonplaceholder.typicode.com/users", {
         signal: controller.signal,
@@ -22,7 +21,6 @@ const CancellingFetchRequest = () => {
         if (err instanceof CanceledError) return;
         setError(err.message);
       });
-
     return () => controller.abort();
   }, []);
 
