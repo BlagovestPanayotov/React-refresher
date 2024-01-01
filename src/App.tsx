@@ -25,6 +25,7 @@ import CancellingFetchRequest from "./components/CancellingFetchRequest/Cancelli
 import ShowLoadingIndicator from "./components/ShowLoadingIndicator/ShowLoadingIndicator";
 import DeleteData from "./components/DeleteData/DeleteData";
 import CreateData from "./components/CreateData/CreateData";
+import UpdateData from "./components/UpdateData/UpdateData";
 
 const arrColors = [
   "primary",
@@ -58,7 +59,8 @@ function App() {
 
   return (
     <div>
-      {/*<CreateData />
+      {/*<UpdateData />
+      <CreateData />
       <DeleteData />
       <ShowLoadingIndicator />
       <CancellingFetchRequest />
