@@ -23,6 +23,7 @@ import EffectCleanUp from "./components/EffectCleanUp/EffectCleanUp";
 import FetchingData from "./components/FetchingData/FetchingData";
 import CancellingFetchRequest from "./components/CancellingFetchRequest/CancellingFetchRequest";
 import ShowLoadingIndicator from "./components/ShowLoadingIndicator/ShowLoadingIndicator";
+import DeleteData from "./components/DeleteData/DeleteData";
 
 const arrColors = [
   "primary",
@@ -56,8 +57,9 @@ function App() {
 
   return (
     <div>
+      {/*<DeleteData />
       <ShowLoadingIndicator />
-      {/* <CancellingFetchRequest />
+      <CancellingFetchRequest />
       <FetchingData />
       <EffectCleanUp></EffectCleanUp>
       <div>
