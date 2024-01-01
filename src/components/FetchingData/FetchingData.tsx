@@ -13,14 +13,14 @@ const FetchingData = () => {
   /* Fetch with async-await */
   useEffect(() => {
     async function fetchUsers() {
-      try {
-        const res = await axios.get<User[]>(
-          "https://jsonplaceholder.typicode.com/uxsers"
-        );
-        setUsers(res.data);
-      } catch (err) {
-        setError((err as AxiosError).message);
-      }
+      // try {
+      //   const res = await axios.get<User[]>(
+      //     "https://jsonplaceholder.typicode.com/uxsers"
+      //   );
+      //   setUsers(res.data);
+      // } catch (err) {
+      //   setError((err as AxiosError).message);
+      // }
     }
 
     fetchUsers();
