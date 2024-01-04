@@ -26,40 +26,44 @@ import ShowLoadingIndicator from "./components/ShowLoadingIndicator/ShowLoadingI
 import DeleteData from "./components/DeleteData/DeleteData";
 import CreateData from "./components/CreateData/CreateData";
 import UpdateData from "./components/UpdateData/UpdateData";
+import OptimizedComponentFetch from "./components/OptimizedComponentFetch/OptimizedComponentFetch";
+import CreatingCustomDataFetchHook from "./components/OptimizedComponentFetch/CreatingCustomDataFetchHook/CreatingCustomDataFetchHook";
 
-const arrColors = [
-  "primary",
-  "secondary",
-  "success",
-  "danger",
-  "warning",
-  "info",
-  "light",
-];
+// const arrColors = [
+//   "primary",
+//   "secondary",
+//   "success",
+//   "danger",
+//   "warning",
+//   "info",
+//   "light",
+// ];
 
 function App() {
-  const [category, setCategory] = useState("");
+  // const [category, setCategory] = useState("");
 
-  function HandlerButtonClick(
-    currentIndex: number,
-    setCurrentIndex: any,
-    colors: string[]
-  ) {
-    setAlertVisibility(true);
-    if (currentIndex >= colors.length - 1) {
-      setCurrentIndex(0);
-    } else {
-      setCurrentIndex(currentIndex + 1);
-    }
-  }
+  // function HandlerButtonClick(
+  //   currentIndex: number,
+  //   setCurrentIndex: any,
+  //   colors: string[]
+  // ) {
+  //   setAlertVisibility(true);
+  //   if (currentIndex >= colors.length - 1) {
+  //     setCurrentIndex(0);
+  //   } else {
+  //     setCurrentIndex(currentIndex + 1);
+  //   }
+  // }
 
-  const [alertVisible, setAlertVisibility] = useState(false);
+  // const [alertVisible, setAlertVisibility] = useState(false);
 
-  const items = ["Sofia", "London", "Bourgas"];
+  // const items = ["Sofia", "London", "Bourgas"];
 
   return (
     <div>
-      {/*<UpdateData />
+      <CreatingCustomDataFetchHook></CreatingCustomDataFetchHook>
+      {/*<OptimizedComponentFetch />
+      <UpdateData />
       <CreateData />
       <DeleteData />
       <ShowLoadingIndicator />
